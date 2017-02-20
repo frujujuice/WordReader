@@ -1,0 +1,2 @@
+# change .doc files to .zip
+for file in *.doc ; do mv $file `echo $file | sed 's/\(.*\.\)doc /\1zip/'` ; done
